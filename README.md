@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src=".github/assets/logo.png" alt="Makimono logo" title="Makimono" width="80"/>
+<p align="center">
+  <img src=".github/assets/logo.png" alt="Makimono logo" title="Makimono" width="80"/>
+</p>
 
 # Makimono
 
