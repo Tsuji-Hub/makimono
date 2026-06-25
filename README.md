@@ -7,7 +7,7 @@
 ### A feature-driven fork of Mihon
 
 Everything Mihon does, plus the features I actually wanted: hands-free webtoon auto-scroll,
-smarter AniList recommendations, one-shot bulk tracking, and in-app updates.
+AniList-powered discovery and recommendations, a personalized For You feed, and one-shot bulk tracking.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/Tsuji-Hub/makimono?label=release&color=0d6efd)](https://github.com/Tsuji-Hub/makimono/releases/latest)
@@ -27,11 +27,12 @@ smarter AniList recommendations, one-shot bulk tracking, and in-app updates.
 - [Feature guide](#feature-guide)
   - [Webtoon auto-scroll](#webtoon-auto-scroll)
   - [Similar titles (AniList recommendations)](#similar-titles-anilist-recommendations)
+  - [Discover (browse by AniList tags)](#discover-browse-by-anilist-tags)
+  - [For You (personalized feed)](#for-you-personalized-feed)
   - [Bulk AniList tracking](#bulk-anilist-tracking)
   - [Fold-aware reader margins](#fold-aware-reader-margins)
   - [Reliable backups](#reliable-backups)
-  - [In-app updates](#in-app-updates)
-- [Updating](#updating)
+  - [Choose your app icon](#choose-your-app-icon)
 - [Feedback and requests](#feedback-and-requests)
 - [Built on Mihon](#built-on-mihon)
 - [License](#license)
@@ -48,7 +49,7 @@ smarter AniList recommendations, one-shot bulk tracking, and in-app updates.
 *Requires Android 8.0 or higher.*
 
 > [!NOTE]
-> Once installed, you never have to sideload again. Updates arrive **inside the app** (see [Updating](#updating)).
+> Once installed, you never have to sideload again. Updates arrive **inside the app**, no re-sideloading.
 
 ## Migrating from Mihon
 
@@ -66,10 +67,12 @@ Your library, reading progress, categories, and tracking all come with you.
 
 - **Webtoon auto-scroll** with adjustable speed, a floating controller, two-finger tap, and volume-key speed control.
 - **Similar titles**: AniList-powered recommendations ranked by how well they actually match, with rich filters and an in-place preview.
+- **Discover**: browse and search the AniList catalog by tag combinations (include *and* exclude tags); opens on Trending so it is never empty.
+- **For You**: a personalized feed built from your library's taste, with a weekly rotation and a Refresh button for new picks on demand.
 - **Bulk AniList tracking**: link your entire library (or a category) in one pass instead of one title at a time.
 - **Fold-aware reader margins** that switch live between the cover and inner screen on foldables.
 - **Backups that fully restore**, including the category settings stock Mihon drops.
-- **In-app updates** with a real "What's new" each release.
+- **Choose your app icon** from six crest color variants in Appearance settings.
 
 ---
 
@@ -126,6 +129,35 @@ actually match the title you are on (shared tags plus community rating), not a r
 - Each card shows the **match score, status, and chapter count** at a glance.
 - **Long-press any card** to preview its synopsis and reader reviews without ever opening a source.
 
+### Discover (browse by AniList tags)
+
+**What it is.** Browse and search the whole AniList catalog by tag. It opens on **Trending**, so there
+is always something to see, and you combine **include and exclude** tags to zero in on exactly the kind
+of story you want.
+
+**How to use it**
+
+- Open **Browse** and tap **Discover** (it opens on Trending right away, never a blank "pick a tag" screen).
+- Open the **tag picker**, search genres and tags, and tap each one to set it to **include** or **exclude**
+  (for example: include *Isekai* and *Time Travel*, exclude *Harem*).
+- Results re-rank by how well they match your included tags. **Long-press** a card to preview it, or **tap**
+  to find it across your installed sources.
+- Adult tags and titles stay hidden unless you have enabled NSFW sources.
+
+### For You (personalized feed)
+
+**What it is.** A personalized feed built from your own library's taste, the tags and genres you already
+read and track on AniList. No setup and no new screen to learn; it works from the library you already have.
+
+**How to use it**
+
+- Open **Browse** and tap **For You**. It builds a taste profile from your AniList-tracked library and
+  fills with on-taste titles you do not already own.
+- The picks **rotate every week**, so the feed stays fresh, with a countdown to the next rotation.
+- Tap **Refresh** (top right) any time you want a new set on demand.
+- The more you track on AniList (the **bulk tracker** makes this quick), the sharper it gets. With only a
+  few tracked titles it falls back to Trending until it has enough to learn from.
+
 ### Bulk AniList tracking
 
 **What it is.** Link your whole library to AniList in one pass, with a review step, instead of adding
@@ -155,21 +187,15 @@ Mihon silently drops on restore now come back correctly.
 
 **How to use it.** Automatic. Just restore a backup as usual and your per-category setup survives.
 
-### In-app updates
+### Choose your app icon
 
-**What it is.** The built-in updater, so new versions arrive inside the app like stock Mihon, no
-manual sideloading after the first install.
+**What it is.** Pick the launcher icon's color to match your taste, with six crest variants to choose from.
 
-**How to use it.** See [Updating](#updating) below.
+**How to use it**
 
----
-
-## Updating
-
-- When a new version ships, Makimono shows an **update notification** with a **"What's new"** summary.
-  Tap it to download and install over the top.
-- You can also check any time: **Settings > About > Check for updates**.
-- Updates install over the existing app and keep all your data.
+- Go to **Settings > Appearance > App icon**.
+- Choose from **teal, terracotta, indigo, plum, crimson, or slate**.
+- The launcher icon updates to your pick. It may take a moment and the app might briefly close, which is normal.
 
 ---
 
