@@ -9,7 +9,8 @@
 ### A feature-driven fork of Mihon
 
 Everything Mihon does, plus the features I actually wanted: hands-free webtoon auto-scroll,
-AniList-powered discovery and recommendations, a personalized For You feed, and one-shot bulk tracking.
+AniList-powered discovery and recommendations, a personalized For You feed, cross-source reader
+comments, and one-shot bulk tracking.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/Tsuji-Hub/makimono?label=release&color=0d6efd)](https://github.com/Tsuji-Hub/makimono/releases/latest)
@@ -31,6 +32,7 @@ AniList-powered discovery and recommendations, a personalized For You feed, and 
   - [Similar titles (AniList recommendations)](#similar-titles-anilist-recommendations)
   - [Discover (browse by AniList tags)](#discover-browse-by-anilist-tags)
   - [For You (personalized feed)](#for-you-personalized-feed)
+  - [Reader comments](#reader-comments)
   - [Bulk AniList tracking](#bulk-anilist-tracking)
   - [Fold-aware reader margins](#fold-aware-reader-margins)
   - [Reliable backups](#reliable-backups)
@@ -71,6 +73,7 @@ Your library, reading progress, categories, and tracking all come with you.
 - **Similar titles**: AniList-powered recommendations ranked by how well they actually match, with rich filters and an in-place preview.
 - **Discover**: browse and search the AniList catalog by tag combinations (include *and* exclude tags); opens on Trending so it is never empty.
 - **For You**: a personalized feed built from your library's taste, with a weekly rotation and a Refresh button for new picks on demand.
+- **Reader comments**: read the discussion for a title from WEBTOON, Comick, and MangaDex, with a tab per source and a chapter picker to jump anywhere.
 - **Bulk AniList tracking**: link your entire library (or a category) in one pass instead of one title at a time.
 - **Fold-aware reader margins** that switch live between the cover and inner screen on foldables.
 - **Backups that fully restore**, including the category settings stock Mihon drops.
@@ -160,6 +163,22 @@ read and track on AniList. No setup and no new screen to learn; it works from th
 - The more you track on AniList (the **bulk tracker** makes this quick), the sharper it gets. With only a
   few tracked titles it falls back to Trending until it has enough to learn from.
 
+### Reader comments
+
+**What it is.** See what other readers are saying about a title, pulled live from **WEBTOON, Comick, and
+MangaDex**. Makimono finds the title on whichever of those has a discussion, so you get comments even when
+you read it from a different source. It is **read-only** — a window into the conversation, no account and
+no posting.
+
+**How to use it**
+
+- Open any manga and tap **Reader comments** on the detail page.
+- If a title has comments on more than one source, a **tab for each** appears (WEBTOON / Comick / MangaDex);
+  switch between them freely. WEBTOON also offers a **Top / Newest** sort.
+- Use the **chapter picker** (or the ‹ › steppers) at the top to jump to any chapter's comments without
+  leaving the screen.
+- Turn the feature, or any individual source, on or off in **Settings > Reader > Comments**.
+
 ### Bulk AniList tracking
 
 **What it is.** Link your whole library to AniList in one pass, with a review step, instead of adding
@@ -191,13 +210,15 @@ Mihon silently drops on restore now come back correctly.
 
 ### Choose your app icon
 
-**What it is.** Pick the launcher icon's color to match your taste, with six crest variants to choose from.
+**What it is.** Pick the launcher icon's color to match your taste, with seven crest variants to choose
+from. Your notification accent follows your pick, so the whole app stays coordinated.
 
 **How to use it**
 
 - Go to **Settings > Appearance > App icon**.
-- Choose from **teal, terracotta, indigo, plum, crimson, or slate**.
-- The launcher icon updates to your pick. It may take a moment and the app might briefly close, which is normal.
+- Choose from **slate (default), teal, terracotta, indigo, plum, crimson, or gray**.
+- The launcher icon updates to your pick and notifications take on its accent color. It may take a moment
+  and the app might briefly close, which is normal.
 
 ---
 
