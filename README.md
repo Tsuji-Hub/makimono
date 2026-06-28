@@ -9,7 +9,7 @@
 ### A feature-driven fork of Mihon
 
 Everything Mihon does, plus the features I actually wanted: hands-free webtoon auto-scroll,
-AniList-powered discovery and recommendations, a personalized For You feed, cross-source reader
+AniList-powered discovery, multi-source recommendations, a personalized For You feed, cross-source reader
 comments, and one-shot bulk tracking.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
@@ -29,7 +29,7 @@ comments, and one-shot bulk tracking.
 - [Screenshots](#screenshots)
 - [Feature guide](#feature-guide)
   - [Webtoon auto-scroll](#webtoon-auto-scroll)
-  - [Similar titles (AniList recommendations)](#similar-titles-anilist-recommendations)
+  - [Similar titles (multi-source recommendations)](#similar-titles-multi-source-recommendations)
   - [Discover (browse by AniList tags)](#discover-browse-by-anilist-tags)
   - [For You (personalized feed)](#for-you-personalized-feed)
   - [Reader comments](#reader-comments)
@@ -70,9 +70,9 @@ Your library, reading progress, categories, and tracking all come with you.
 ## Highlights
 
 - **Webtoon auto-scroll** with adjustable speed, a floating controller, two-finger tap, and volume-key speed control.
-- **Similar titles**: AniList-powered recommendations ranked by how well they actually match, with rich filters and an in-place preview.
+- **Similar titles**: multi-source recommendations from AniList, MyAnimeList, MangaUpdates, MangaDex, and Comick, merged into one list that floats up the titles several sources agree on — with rich filters, an in-place preview, and "load more" to keep going.
 - **Discover**: browse and search the AniList catalog by tag combinations (include *and* exclude tags); opens on Trending so it is never empty.
-- **For You**: a personalized feed built from your library's taste, with a weekly rotation and a Refresh button for new picks on demand.
+- **For You**: a personalized feed built from your library's taste — now also drawing on cross-source recommendations for the titles you read most — with a weekly rotation and a Refresh button for new picks on demand.
 - **Reader comments**: read the discussion for a title from WEBTOON, Comick, and MangaDex, with a tab per source and a chapter picker to jump anywhere.
 - **Bulk AniList tracking**: link your entire library (or a category) in one pass instead of one title at a time.
 - **Fold-aware reader margins** that switch live between the cover and inner screen on foldables.
@@ -121,17 +121,21 @@ speed you control, pauses the moment you touch, and rolls straight through chapt
 speed, On-screen controls, On-screen controls opacity, Two-finger tap to start or stop, Volume keys
 adjust speed.*
 
-### Similar titles (AniList recommendations)
+### Similar titles (multi-source recommendations)
 
-**What it is.** Open any manga and get recommendations powered by AniList, ranked by how well they
-actually match the title you are on (shared tags plus community rating), not a random list.
+**What it is.** Open any manga and get recommendations merged from five sources — **AniList, MyAnimeList,
+MangaUpdates, MangaDex, and Comick** — into one ranked list. Titles that several sources independently
+recommend rise to the top, every pick is shown with proper English titles and metadata, and each card
+names the sources it came from so you can see the agreement at a glance.
 
 **How to use it**
 
 - Open a manga and tap **Similar**.
+- Each card shows its **match score, status, chapter count, and which sources recommended it** (for example, "via AniList + MyAnimeList").
 - **Filter** the results: completed-only, minimum chapter count, include/exclude genres and tags, hide
   what is already in your library, or flip on **hidden-gems** mode to surface high-quality, lesser-known titles.
-- Each card shows the **match score, status, and chapter count** at a glance.
+- Turn individual recommendation **sources on or off** from the filter sheet if one is flaky or unwanted.
+- **Scroll to the bottom to load more** — each round widens the net for deeper, less strictly similar picks.
 - **Long-press any card** to preview its synopsis and reader reviews without ever opening a source.
 
 ### Discover (browse by AniList tags)
@@ -157,7 +161,8 @@ read and track on AniList. No setup and no new screen to learn; it works from th
 **How to use it**
 
 - Open **Browse** and tap **For You**. It builds a taste profile from your AniList-tracked library and
-  fills with on-taste titles you do not already own.
+  fills with on-taste titles you do not already own — including cross-source recommendations drawn from
+  the titles you read and rate highest, so it reaches beyond your usual genres.
 - The picks **rotate every week**, so the feed stays fresh, with a countdown to the next rotation.
 - Tap **Refresh** (top right) any time you want a new set on demand.
 - The more you track on AniList (the **bulk tracker** makes this quick), the sharper it gets. With only a
