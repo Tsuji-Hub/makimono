@@ -74,6 +74,7 @@ Your library, reading progress, categories, and tracking all come with you.
 - **Discover**: browse and search the AniList catalog by tag combinations (include *and* exclude tags); opens on Trending so it is never empty.
 - **For You**: a personalized feed built from your library's taste — now also drawing on cross-source recommendations for the titles you read most — with a weekly rotation and a Refresh button for new picks on demand.
 - **Reader comments**: read the discussion for a title from WEBTOON, Comick, and MangaDex, with a tab per source and a chapter picker to jump anywhere.
+- **Series progress in the reader**: the chapter label shows how far through a series you are — "Ch. 78 / 321" at a glance, without leaving the page.
 - **Bulk AniList tracking**: link your entire library (or a category) in one pass instead of one title at a time.
 - **Fold-aware reader margins** that switch live between the cover and inner screen on foldables.
 - **Backups that fully restore**, including the category settings stock Mihon drops.
@@ -183,6 +184,18 @@ no posting.
 - Use the **chapter picker** (or the ‹ › steppers) at the top to jump to any chapter's comments without
   leaving the screen.
 - Turn the feature, or any individual source, on or off in **Settings > Reader > Comments**.
+
+### Series progress in the reader
+
+**What it is.** The reader's chapter label shows how far through the series you are, using the
+highest chapter number the series reaches: plainly-numbered chapters read **"Ch. 78 / 321"**, and
+chapters with episode titles get a clear numeric pair, like **"Nature Realm \<4\> · 318 / 321"**.
+The total ignores your reading filters (downloaded-only, unread-only), and the label quietly stays
+plain whenever the numbers can't be trusted — unnumbered chapters, single-chapter series, or when
+you are already on the newest chapter.
+
+**How to use it.** Nothing to do — it is on by default. Toggle it under **Reader settings >
+General > "Show series progress in chapter label"**.
 
 ### Bulk AniList tracking
 
