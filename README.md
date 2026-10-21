@@ -73,6 +73,7 @@ Your library, reading progress, categories, and tracking all come with you.
 - **Webtoon auto-scroll** with adjustable speed, a floating controller, two-finger tap, and volume-key speed control.
 - **Similar titles**: multi-source recommendations from AniList, MyAnimeList, MangaUpdates, MangaDex, and Comick, merged into one list that floats up the titles several sources agree on — with rich filters, an in-place preview, and "load more" to keep going.
 - **Discover**: browse by tag combinations (include *and* exclude), now across AniList **and MangaBaka's much larger tag list**, so niche mixes like *System + Murim* manhwa find results; related tags are grouped into one chip. Long-press any card for a preview with **Comments and Reviews**.
+- **Keeps working when AniList is down**: Discover, Similar and For You switch to Comick and MangaBaka on their own, with one quiet note, and switch back when AniList returns.
 - **For You**: a personalized feed built from your library's taste, led by **Best matches** for everything on your AniList ("Because you read …"), with a weekly rotation that reopens instantly.
 - **Reader comments**: read the discussion for a title from WEBTOON, Comick, and MangaDex, with a tab per source and a chapter picker to jump anywhere.
 - **Series progress in the reader**: the chapter label shows how far through a series you are — "Ch. 78 / 321" at a glance, without leaving the page.
@@ -162,6 +163,8 @@ of story you want.
 - With an AniList login, titles already on your list are hidden (Planned ones stay, with a badge; both are
   switchable in Filters).
 - A short walkthrough shows the gestures the first time; replay it from the menu (**Show tips again**).
+- If AniList is down, Discover fills from Comick (same order and filters) and tag chips run on MangaBaka; a chip with
+  no MangaBaka equivalent shows as unavailable. Tap the note at the top for the details or to check again.
 - Adult titles and tags are hidden by default. Turn on **Show adult titles** in the filters (Discover, For You
   and Similar share it) to see them; it only works while 18+ is allowed in Settings > Browse, and turning it
   off never touches your 18+ sources.
