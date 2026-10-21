@@ -34,6 +34,7 @@ comments, and one-shot bulk tracking.
   - [For You (personalized feed)](#for-you-personalized-feed)
   - [Reader comments](#reader-comments)
   - [Bulk AniList tracking](#bulk-anilist-tracking)
+  - [AniList auto-track](#anilist-auto-track)
   - [Fold-aware reader margins](#fold-aware-reader-margins)
   - [Reliable backups](#reliable-backups)
   - [Choose your app icon](#choose-your-app-icon)
@@ -71,11 +72,12 @@ Your library, reading progress, categories, and tracking all come with you.
 
 - **Webtoon auto-scroll** with adjustable speed, a floating controller, two-finger tap, and volume-key speed control.
 - **Similar titles**: multi-source recommendations from AniList, MyAnimeList, MangaUpdates, MangaDex, and Comick, merged into one list that floats up the titles several sources agree on — with rich filters, an in-place preview, and "load more" to keep going.
-- **Discover**: browse and search the AniList catalog by tag combinations (include *and* exclude tags); opens on Trending so it is never empty.
-- **For You**: a personalized feed built from your library's taste — now also drawing on cross-source recommendations for the titles you read most — with a weekly rotation and a Refresh button for new picks on demand.
+- **Discover**: browse by tag combinations (include *and* exclude), now across AniList **and MangaBaka's much larger tag list**, so niche mixes like *System + Murim* manhwa find results; related tags are grouped into one chip. Long-press any card for a preview with **Comments and Reviews**.
+- **For You**: a personalized feed built from your library's taste, led by **Best matches** for everything on your AniList ("Because you read …"), with a weekly rotation that reopens instantly.
 - **Reader comments**: read the discussion for a title from WEBTOON, Comick, and MangaDex, with a tab per source and a chapter picker to jump anywhere.
 - **Series progress in the reader**: the chapter label shows how far through a series you are — "Ch. 78 / 321" at a glance, without leaving the page.
 - **Bulk AniList tracking**: link your entire library (or a category) in one pass instead of one title at a time.
+- **AniList auto-track**: new titles link themselves, category moves update their AniList status, and reading updates progress, without lowering it because you peeked ahead.
 - **Fold-aware reader margins** that switch live between the cover and inner screen on foldables.
 - **Backups that fully restore**, including the category settings stock Mihon drops.
 - **Choose your app icon** from six crest color variants in Appearance settings.
@@ -150,8 +152,16 @@ of story you want.
 - Open **Browse** and tap **Discover** (it opens on Trending right away, never a blank "pick a tag" screen).
 - Open the **tag picker**, search genres and tags, and tap each one to set it to **include** or **exclude**
   (for example: include *Isekai* and *Time Travel*, exclude *Harem*).
-- Results re-rank by how well they match your included tags. **Long-press** a card to preview it, or **tap**
-  to find it across your installed sources.
+- The search also offers **MangaBaka's tags** ("More tags from MangaBaka"), for concepts AniList doesn't tag,
+  like *System*, *Murim* or *Level System*. A parent tag includes its subtags (*Martial Arts* covers
+  *Cultivation*), and concepts MangaBaka splits across several tags come as one **family** chip (*System*,
+  *Regression*, *Dungeon*). **+ also match** adds any other tag to a chip you picked.
+- Results re-rank by how well they match your included tags. **Tap** a card to find it across your installed
+  sources, or **long-press** it for a preview: drag it up for full screen, and switch to the **Comments**
+  (from Comick, MangaDex or WEBTOON, starting at chapter 1) or **Reviews** tab.
+- With an AniList login, titles already on your list are hidden (Planned ones stay, with a badge; both are
+  switchable in Filters).
+- A short walkthrough shows the gestures the first time; replay it from the menu (**Show tips again**).
 - Adult tags and titles stay hidden unless you have enabled NSFW sources.
 
 ### For You (personalized feed)
@@ -164,7 +174,10 @@ read and track on AniList. No setup and no new screen to learn; it works from th
 - Open **Browse** and tap **For You**. It builds a taste profile from your AniList-tracked library and
   fills with on-taste titles you do not already own — including cross-source recommendations drawn from
   the titles you read and rate highest, so it reaches beyond your usual genres.
-- The picks **rotate every week**, so the feed stays fresh, with a countdown to the next rotation.
+- With an AniList login it opens with **Best matches**: the strongest recommendations for everything on your
+  list (rereads, completed and long reads count most; scores are optional), each with "Because you read …".
+- The picks **rotate every week**, so the feed stays fresh, with a countdown to the next rotation. The week's
+  picks are kept, so reopening For You is near-instant.
 - Tap **Refresh** (top right) any time you want a new set on demand.
 - The more you track on AniList (the **bulk tracker** makes this quick), the sharper it gets. With only a
   few tracked titles it falls back to Trending until it has enough to learn from.
@@ -210,6 +223,19 @@ every series by hand.
 3. Run the **bulk-link** action. Makimono auto-matches each title to AniList and shows a review screen
    (matched / needs review / no match).
 4. Fix any that need it (search manually or exclude), then **Track all** to link them in one shot.
+
+### AniList auto-track
+
+**What it is.** Keeps AniList in step with your library without any manual tracking: titles you add are
+linked when the match is certain, moving a title between categories updates its AniList status, and
+reading updates progress from your longest run of read chapters, so peeking at a late chapter doesn't count.
+Progress is never lowered, a started title is never set back to Planning, and adult categories stay private.
+
+**How to use it**
+
+1. Log in to AniList (Settings > Tracking > **AniList**) and turn on **Auto-track** there (it is off by default).
+2. Map your categories to AniList statuses (the same mapping as the bulk link; **Use example** fills one in).
+3. Read as usual. When a match isn't certain, the series page shows a **Link to AniList?** chip instead of guessing.
 
 ### Fold-aware reader margins
 
