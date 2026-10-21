@@ -162,7 +162,9 @@ of story you want.
 - With an AniList login, titles already on your list are hidden (Planned ones stay, with a badge; both are
   switchable in Filters).
 - A short walkthrough shows the gestures the first time; replay it from the menu (**Show tips again**).
-- Adult tags and titles stay hidden unless you have enabled NSFW sources.
+- Adult titles and tags are hidden by default. Turn on **Show adult titles** in the filters (Discover, For You
+  and Similar share it) to see them; it only works while 18+ is allowed in Settings > Browse, and turning it
+  off never touches your 18+ sources.
 
 ### For You (personalized feed)
 
