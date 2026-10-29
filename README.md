@@ -32,6 +32,7 @@ comments, and one-shot bulk tracking.
   - [Similar titles (multi-source recommendations)](#similar-titles-multi-source-recommendations)
   - [Discover (browse by AniList tags)](#discover-browse-by-anilist-tags)
   - [For You (personalized feed)](#for-you-personalized-feed)
+  - [Drop rate (how many quit, and where)](#drop-rate-how-many-quit-and-where)
   - [Reader comments](#reader-comments)
   - [Bulk AniList tracking](#bulk-anilist-tracking)
   - [AniList auto-track](#anilist-auto-track)
@@ -75,6 +76,7 @@ Your library, reading progress, categories, and tracking all come with you.
 - **Discover**: browse by tag combinations (include *and* exclude), now across AniList **and MangaBaka's much larger tag list**, so niche mixes like *System + Murim* manhwa find results; related tags are grouped into one chip. Long-press any card for a preview with **Comments and Reviews**.
 - **Keeps working when AniList is down**: Discover, Similar and For You switch to Comick and MangaBaka on their own, with one quiet note, and switch back when AniList returns.
 - **For You**: a personalized feed built from your library's taste, led by **Best matches** for everything on your AniList ("Because you read …"), with a weekly rotation that reopens instantly.
+- **Drop rate**: see how many readers dropped a title before you start it, on the series page and in previews; with your own drops server, also roughly where they quit (your chapter marked) and a small "▼3%" chip on cards.
 - **Reader comments**: read the discussion for a title from WEBTOON, Comick, and MangaDex, with a tab per source and a chapter picker to jump anywhere.
 - **Series progress in the reader**: the chapter label shows how far through a series you are — "Ch. 78 / 321" at a glance, without leaving the page.
 - **Bulk AniList tracking**: link your entire library (or a category) in one pass instead of one title at a time.
@@ -186,6 +188,23 @@ read and track on AniList. No setup and no new screen to learn; it works from th
 - Tap **Refresh** (top right) any time you want a new set on demand.
 - The more you track on AniList (the **bulk tracker** makes this quick), the sharper it gets. With only a
   few tracked titles it falls back to Trending until it has enough to learn from.
+
+### Drop rate (how many quit, and where)
+
+**What it is.** How many readers gave up on a title, from AniList's own reading-status counts: "3.2 %
+dropped", marked low, typical or high against similar titles, with how many finished, are on hold and
+started. With a self-hosted drops server it also shows **where** they quit: a small chart of drops by
+chapter range with the worst stretches highlighted, your own chapter marked, and readers' notes, which stay
+hidden past your chapter so nothing gets spoiled.
+
+**How to use it**
+
+- Open any manga: the **Readers** card sits under the description. Tap it to expand the chart.
+- Long-press a card in Discover, For You or Similar to see the drop rate in the preview; cards and library
+  covers show a small **"▼3%"** chip when a drops server is set.
+- **Optional:** if you run a drops server on your home network, enter its address in **Settings > Advanced >
+  Drop map server**. It is used on Wi-Fi only and stays on your device (never in backups). Without one you
+  still get the drop rate from AniList.
 
 ### Reader comments
 
